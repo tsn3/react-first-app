@@ -7,3 +7,11 @@ export const TodoWrapper = styled.div`
   align-items: center;
   flex-direction: column;
 `
+
+export const ToDoUser = styled.div`
+  display: flex;
+  width: 45rem;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 2rem;
+`

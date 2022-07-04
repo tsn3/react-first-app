@@ -2,6 +2,7 @@ import {useState} from 'react'
 import {TodoInput} from './TodoInput'
 import {TodoList} from './TodoList'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {TodoWrapper} from "./style";
 
 export function Todo() {
   // const toDolist = [
@@ -11,9 +12,9 @@ export function Todo() {
   // ];
   const [toDolist, setToDolist] = useState([]);
   return (
-    <div className="todo">
+    <TodoWrapper>
       <TodoInput setToDolist={setToDolist} />
       <TodoList toDolist={toDolist} setToDolist={setToDolist} />     
-    </div>
+    </TodoWrapper>
   );
 }

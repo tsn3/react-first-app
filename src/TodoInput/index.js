@@ -1,6 +1,7 @@
 import {useState} from 'react'
 import nextId from "react-id-generator";
 import {Button} from "react-bootstrap";
+import {AddTodoWrapper, StyledTodoInput} from "./style";
 
 export function TodoInput({setToDolist}) {
     const[text, setText] = useState('')
@@ -25,8 +26,8 @@ export function TodoInput({setToDolist}) {
         })
     }
     return(
-        <div>
-            <input 
+        <AddTodoWrapper>
+            <StyledTodoInput
                 onChange={onInputChange}
                 type='text'
                 value={text}
@@ -35,6 +36,6 @@ export function TodoInput({setToDolist}) {
             <Button onClick={onAddTodo} variant="primary" >
                 Add Todo
             </Button>
-        </div>
+        </AddTodoWrapper>
     )
 }

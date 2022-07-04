@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 
 export const TodoWrapper = styled.div`
+  padding-top: 5rem;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  margin-top: 30px;
+  align-items: center;
+  flex-direction: column;
 `

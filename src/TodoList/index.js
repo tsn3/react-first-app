@@ -1,4 +1,5 @@
 import { TodoItem } from "../TodoItem"
+import {ListItemTodo, ListTodo} from "./style";
 
 export const TodoList = ({toDolist, setToDolist}) => {
     console.log(toDolist);
@@ -8,9 +9,9 @@ export const TodoList = ({toDolist, setToDolist}) => {
 
             {toDolist && toDolist.length !== 0 
             && <div>
-                    <ol>
-                        {toDolist.map((toDo) => <li key = {toDo.id}><TodoItem toDo = {toDo} setToDolist = {setToDolist} /></li>)}
-                    </ol>
+                    <ListTodo>
+                        {toDolist.map((toDo) => <ListItemTodo key = {toDo.id}><TodoItem toDo = {toDo} setToDolist = {setToDolist} /></ListItemTodo>)}
+                    </ListTodo>
                 </div>
             }        
         </>

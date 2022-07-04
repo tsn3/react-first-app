@@ -1,4 +1,5 @@
 import { Button } from 'react-bootstrap';
+import {ListButtonWrapper, StyledListItem, ListItemWrapper} from "./style";
 
 export const TodoItem = ({toDo, setToDolist}) => {
     const onDeleteToDo = () => {
@@ -11,10 +12,14 @@ export const TodoItem = ({toDo, setToDolist}) => {
         })
     }
     return(
-    <div >
-        <p>{toDo.text}</p>
-        <Button variant="success" >complete</Button>
-        <Button onClick={onDeleteToDo} variant="danger" >delete</Button>
-    </div>
+    <ListItemWrapper>
+        <StyledListItem>
+            {toDo.text}
+        </StyledListItem>
+        <ListButtonWrapper>
+            <Button variant="success" >complete</Button>
+            <Button onClick={onDeleteToDo} variant="danger" >delete</Button>
+        </ListButtonWrapper>
+    </ListItemWrapper>
     )
 }

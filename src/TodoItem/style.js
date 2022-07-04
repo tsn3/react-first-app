@@ -19,4 +19,9 @@ export const StyledListItem = styled.p`
 
 export const Done = styled.p`
   text-decoration: line-through;
+  color: #198754;
+`
+
+export const NotDone = styled.p`
+  text-decoration: none;
 `

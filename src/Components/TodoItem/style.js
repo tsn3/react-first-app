@@ -17,11 +17,11 @@ export const StyledListItem = styled.p`
   word-wrap: break-word;
 `
 
-export const Done = styled.p`
+export const Done = styled.span`
   text-decoration: line-through;
   color: #198754;
 `
 
-export const NotDone = styled.p`
+export const NotDone = styled.span`
   text-decoration: none;
 `

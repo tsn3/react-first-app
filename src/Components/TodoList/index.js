@@ -1,5 +1,5 @@
-import { TodoItem } from "../TodoItem"
 import {ListItemTodo, ListTodo} from "./style";
+import {TodoItem} from "../TodoItem";
 
 export const TodoList = ({toDolist, setToDolist}) => {
     console.log(toDolist);

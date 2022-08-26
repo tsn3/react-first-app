@@ -3,9 +3,10 @@ import {ToDoUser, TodoWrapper} from "../../style";
 import {Button} from "react-bootstrap";
 import {Link, Outlet} from "react-router-dom";
 import React from "react";
+import {MultiFunction} from "../MultiFunction";
 
 export const Authenticated = () => {
- const {user, logout} = useAuth0();
+  const {user, logout} = useAuth0();
 
   return (
     <TodoWrapper>
@@ -25,6 +26,7 @@ export const Authenticated = () => {
           <Link to="/features">Features</Link> |{" "}
           <Link to="/expenses">Something</Link>
         </nav>
+        <MultiFunction />
       </div>
       <Outlet />
     </TodoWrapper>
